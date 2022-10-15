@@ -1,5 +1,6 @@
 body {
     font-family: Roboto, sans-serif;
+    margin: 50px;
 }
 
 .header,
@@ -32,7 +33,10 @@ li {
 
 .topper {
     display: flex;
-
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    flex: auto;
 }
 
 .header {
@@ -60,4 +64,44 @@ button {
     border-radius: 5px;
     border: 1px solid white;
     padding: 5px 20px;
+}
+
+.pictures img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid blue;
+}
+
+.upper_mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+    width: 150px;
+}
+
+.lower_mid {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.quoted {
+    font-weight: 600;
+    font-size: 18px;
+    align-self: flex-end;
 }
