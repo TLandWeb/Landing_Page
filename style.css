@@ -1,11 +1,6 @@
 body {
     font-family: Roboto, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    
+    margin: 0;
 }
 
 .header,
@@ -14,11 +9,16 @@ body {
     color: #f9faf8;
 }
 
-.topper,
-.upper_mid,
-.middle_mid,
-.lower_mid {
-    padding: 50px 200px;
+.header_shell {
+    padding: 0px 150px;
+    background-color: #1f2937;
+}
+
+.topper_shell,
+.four_pics_shell,
+.quote_shell,
+.sign_up_shell {
+    padding: 50px 150px;
 }
 
 h1 {
@@ -42,6 +42,15 @@ li {
     border: 1px solid blue;
     background-color: aquamarine;
     flex: auto;
+    margin-left: 50px;
+}
+
+.topper img {
+    flex: 1 1 auto;
+    width: 400px;
+    max-width: 100%;
+    max-height: auto;
+    margin-left: 50px;
 }
 
 .topper {
@@ -49,6 +58,10 @@ li {
     align-items: center;
     justify-content: space-between;
     flex: auto;
+}
+
+.topper_shell {
+    background-color: #1f2937;
 }
 
 .header {
@@ -75,17 +88,18 @@ button {
     color: #f9faf8;
     border-radius: 5px;
     border: 1px solid white;
-    padding: 5px 20px;
+    padding: 5px 30px;
+    height: 40px;
 }
 
 .pictures img {
     height: 150px;
     width: 150px;
     border-radius: 15px;
-    border: 2px solid blue;
+    
 }
 
-.upper_mid {
+.four_pics {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,40 +109,49 @@ button {
 .pictures {
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 40px;
     text-align: center;
     width: 150px;
 }
 
-.middle_mid {
+.quote {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.quote {
+.quote_shell {
+    background-color: #e5e7eb;
+    padding: 50px 150px;
+}
+
+.quote_text {
     font-style: italic;
     font-weight: 100;
     font-size: 36px;
     margin: 0px 100px;
 }
 
-.quoted {
+.thor {
     font-weight: 600;
     font-size: 18px;
     align-self: flex-end;
     margin-right: 100px;
 }
 
-.lower_mid {
+.sign_up {
     background-color: #3882f6;
-   
-    margin: 40px 0px;
+    padding: 30px 100px;
     border-radius: 15px;
     color:#f9faf8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.action p {
+    margin-top: -20px;
 }
 
 .footer {
@@ -137,4 +160,5 @@ button {
     align-items: center;
     background-color: #1f2937;
     color: #e5e7eb;
+    padding: 20px 0px;
 }
