@@ -1,12 +1,24 @@
 body {
     font-family: Roboto, sans-serif;
-    margin: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .header,
 .topper {
     background-color: #1f2937;
     color: #f9faf8;
+}
+
+.topper,
+.upper_mid,
+.middle_mid,
+.lower_mid {
+    padding: 50px 200px;
 }
 
 h1 {
@@ -25,15 +37,15 @@ li {
 }
 
 .topper_image {
-    height: 100px;
-    width: 400px;
+    height: 200px;
+    width: 700px;
     border: 1px solid blue;
     background-color: aquamarine;
+    flex: auto;
 }
 
 .topper {
     display: flex;
-    height: 300px;
     align-items: center;
     justify-content: space-between;
     flex: auto;
@@ -88,20 +100,41 @@ button {
     width: 150px;
 }
 
-.lower_mid {
+.middle_mid {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .quote {
     font-style: italic;
     font-weight: 100;
     font-size: 36px;
+    margin: 0px 100px;
 }
 
 .quoted {
     font-weight: 600;
     font-size: 18px;
     align-self: flex-end;
+    margin-right: 100px;
+}
+
+.lower_mid {
+    background-color: #3882f6;
+   
+    margin: 40px 0px;
+    border-radius: 15px;
+    color:#f9faf8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
 }
